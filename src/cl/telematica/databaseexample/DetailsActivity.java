@@ -22,7 +22,9 @@ public class DetailsActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_detail);
+		
+		url = getIntent().getStringExtra("link");
 		
 		webView = (WebView) findViewById(R.id.webView);
 		hPBarLayout = (RelativeLayout) findViewById(R.id.hPBarLayout);
